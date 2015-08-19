@@ -1643,7 +1643,7 @@ pre code {
   right: 0;
   height: 500px;
   width:100%;
-  padding-top: 400px;
+  padding-top: 350px;
   margin:0 auto;
   text-align: center;
 }
@@ -1652,8 +1652,8 @@ pre code {
   left:0;
   right: 0;
   height: 300px;
-  width:500px;
-  padding-top: 75px;
+  width:100%x;
+  padding-top: 25px;
   margin:0 auto;
   text-align: center;
   color: black;
