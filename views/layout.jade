@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    include header
+    .row.cow1
+    .face-thing
+      img.img-circle(src="/images/profile.png" style="width: 150px; height: 150px")
+    .face-words
+      h1.featurette-heading
+        font(color="white") 
+          |Hi! My name is Harrison Qu, 
+          | and I am a software developer.
+
+
+    .container
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading
+            | The first section. 
+            span.text-muted It's amazing.
+          p.lead
+            | No seriously, it's amazing.
+
+      hr.featurette-divider
+    .container
+      .row.featurette
+        .col-md-7.col-md-push-5
+          h2.featurette-heading
+            | The second section. 
+            span.text-muted Pretty cool.
+          p.lead
+            | It's really cool, I swear. 
+            | This one's even gonna have a picture in it probably.
+      hr.featurette-divider
+    .container
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading
+            | And lastly, this one. 
+            span.text-muted Checkmate.
+          p.lead
+            | Yeah, that's right, the page scrolls. I'm just typing random words here
+            | to make it look like there's actually some content but it's actually just
+            | some garbage filler text
+      hr.featurette-divider
