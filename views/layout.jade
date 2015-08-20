@@ -2,23 +2,57 @@ doctype html
 html
   head
     title= title
+    
+    //import stylesheets
+    link(type='text/css', rel='stylesheet', href='/stylesheets/materialize.css', media='screen,projection')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/animate.css')
+
+
+    // Let browser know website is optimized for mobile
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    //import javascripts
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js')
+    script(language='Javascript', type='text/javascript', src='/javascripts/smoothPageScroll.js')
+    script(language='Javascript', type='text/javascript', src='/javascripts/wow.js')
+    script(type='text/javascript', src='/javascripts/materialize.js')
+    script.
+      new WOW().init();
+    script(type='text/javascript').
+      $(document).ready(function(){
+        $('.parallax').parallax();
+      });
+
   body
     include header
     .row.cow1
     .face-thing
-      img.img-circle(src="/images/profile.png" style="width: 150px; height: 150px")
+      .wow.fadeIn
+        img.img-circle(src="/images/profile.png" style="width: 150px; height: 150px")
     .face-words
-      h1.featurette-heading
-        font(color="white") 
-          |Hi! My name is Harrison Qu, 
-          | and I am a software developer.
+      .wow.fadeIn
+        h1.featurette-heading
+          font(color="white") 
+            |Hi! My name is 
+            strong Harrison Qu
+    .container
+      .row.whoami
+        h1 Who Am I?
+        h2.text-muted Let's find out!
+      hr.featurette-divider
+    .parallax-container
+      .parallax
+        img(src='/images/head.jpg')
+
 
 
     .container
       .row.featurette
         .col-md-7
-          h2.featurette-heading
+          h1.featurette-heading
             | The first section. 
             span.text-muted It's amazing.
           p.lead
@@ -28,7 +62,7 @@ html
     .container
       .row.featurette
         .col-md-7.col-md-push-5
-          h2.featurette-heading
+          h1.featurette-heading
             | The second section. 
             span.text-muted Pretty cool.
           p.lead
@@ -38,7 +72,7 @@ html
     .container
       .row.featurette
         .col-md-7
-          h2.featurette-heading
+          h1.featurette-heading
             | And lastly, this one. 
             span.text-muted Checkmate.
           p.lead
