@@ -1622,14 +1622,9 @@ pre code {
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("/images/android.png");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("/images/android.png");
   height:600px;
   z-index: 1;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
   display:block;
   position: absolute;
   left:0;
