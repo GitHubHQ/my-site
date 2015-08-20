@@ -1,4 +1,4 @@
-/* http://blog.bassta.bg/2013/05/smooth-page-scrolling-with-tweenmax/ */
+//* http://blog.bassta.bg/2013/05/smooth-page-scrolling-with-tweenmax/ */
 
 $(function(){
 	
