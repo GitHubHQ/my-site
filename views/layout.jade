@@ -4,7 +4,6 @@ html
     title= title
     
     //import stylesheets
-    link(type='text/css', rel='stylesheet', href='/stylesheets/materialize.css', media='screen,projection')
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/animate.css')
 
@@ -17,14 +16,16 @@ html
     script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js')
     script(language='Javascript', type='text/javascript', src='/javascripts/smoothPageScroll.js')
+    script(language='Javascript', type='text/javascript', src='/javascripts/script.js')
+
+
     script(language='Javascript', type='text/javascript', src='/javascripts/wow.js')
     script(type='text/javascript', src='/javascripts/materialize.js')
     script.
       new WOW().init();
-    script(type='text/javascript').
-      $(document).ready(function(){
-        $('.parallax').parallax();
-      });
+
+    //stuff
+    
 
   body
     include header
@@ -37,15 +38,16 @@ html
         h1.featurette-heading
           font(color="white") 
             |Hi! My name is 
-            strong Harrison Qu
+            strong Harrison
     .container
       .row.whoami
-        h1 Who Am I?
+        h1 Who am I?
         h2.text-muted Let's find out!
-      hr.featurette-divider
-    .parallax-container
-      .parallax
-        img(src='/images/head.jpg')
+    #intro(data-speed='4', data-type='background')
+      .row
+        .intro-unit
+
+
 
 
 
