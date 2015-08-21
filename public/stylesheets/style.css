@@ -1614,14 +1614,18 @@ pre code {
   margin-left: -15px;
 
 }
+.navbar.expand {
+    height: 100px;
+    background: #000;
+}
 .cow1{
 	margin-top: 50px;
 	margin-right: auto;
 	margin-left: auto;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 80%;
   background-attachment: fixed;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url("/images/mat.png");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url("/images/grainger2.png");
   height:500px;
   z-index: 1;
   display:block;
@@ -1668,11 +1672,21 @@ pre code {
 
 
 #intro {
-    background: url(/images/grainger2.png) 50% 0 fixed;
+    background: url(/images/android2.jpg) 50% 0 fixed;
     height: 500px;
     margin: 0 auto;
     width: 100%;
     padding: 100px 0;
+    margin-bottom: 6%;
+    background-repeat: no-repeat;
+}
+#intro2 {
+    background: url(/images/head.jpg) 50% 0 fixed;
+    height: 500px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 100px 0;
+    margin-bottom: 6%;
     background-repeat: no-repeat;
 }
 
@@ -4307,6 +4321,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
+  transition: background, 1s;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
