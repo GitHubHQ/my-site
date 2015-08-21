@@ -1618,12 +1618,12 @@ pre code {
 	margin-top: 50px;
 	margin-right: auto;
 	margin-left: auto;
-	background-image: url("/images/android.png");
+	background-image: url("/images/mat.png");
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("/images/android.png");
-  height:600px;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("/images/mat.png");
+  height:500px;
   z-index: 1;
   display:block;
   position: absolute;
@@ -1636,9 +1636,9 @@ pre code {
   display:block;
   left:0;
   right: 0;
-  height: 500px;
+  height: 450px;
   width:100%;
-  padding-top: 350px;
+  padding-top: 200px;
   margin:0 auto;
   text-align: center;
 }
@@ -1646,9 +1646,9 @@ pre code {
   display:block;
   left:0;
   right: 0;
-  height: 250px;
+  height: 200px;
   width:100%x;
-  padding-top: 25px;
+  padding-top: 0px;
   margin:0 auto;
   text-align: center;
   color: black;
@@ -1659,16 +1659,15 @@ pre code {
   right: 0;
   margin:0 auto;
   text-align: center;
-  height:200px;
+  height:250px;
 }
 #intro {
-    background: url(/images/head.jpg) 50% 0 fixed;
+    background: url(/images/android2.jpg) 50% 0 fixed;
     height: 500px;
     margin: 0 auto;
     width: 100%;
     padding: 100px 0;
-    background-repeat: no-repeat;
-
+    background-repeat: no-repe2.jpg
 }
 
 .intro-unit {
