@@ -1618,11 +1618,10 @@ pre code {
 	margin-top: 50px;
 	margin-right: auto;
 	margin-left: auto;
-	background-image: url("/images/grainger.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 70%;
+  background-position: 50% 50%;
   background-attachment: fixed;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("/images/grainger.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("/images/mat.png");
   height:500px;
   z-index: 1;
   display:block;
@@ -1669,7 +1668,7 @@ pre code {
 
 
 #intro {
-    background: url(/images/android2.jpg) 50% 0 fixed;
+    background: url(/images/grainger2.png) 50% 0 fixed;
     height: 500px;
     margin: 0 auto;
     width: 100%;
