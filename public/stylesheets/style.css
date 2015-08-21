@@ -1618,11 +1618,11 @@ pre code {
 	margin-top: 50px;
 	margin-right: auto;
 	margin-left: auto;
-	background-image: url("/images/mat.png");
+	background-image: url("/images/grainger.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 50% 70%;
   background-attachment: fixed;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("/images/mat.png");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("/images/grainger.jpg");
   height:500px;
   z-index: 1;
   display:block;
@@ -1658,9 +1658,16 @@ pre code {
   left:0;
   right: 0;
   margin:0 auto;
+  margin-top: -10%;
   text-align: center;
-  height:250px;
 }
+.aboutme{
+  margin-top:1%;
+  margin-bottom: 3%
+}
+.border { width: 25%; border-top: 5px solid #32CD32; margin: 0 auto; }
+
+
 #intro {
     background: url(/images/android2.jpg) 50% 0 fixed;
     height: 500px;
@@ -4632,7 +4639,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #32CD32;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -4643,7 +4650,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #32CD32;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
