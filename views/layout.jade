@@ -12,11 +12,28 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
 
     //import javascripts
+    //too many scripts.... rip readability...
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js')
     script(language='Javascript', type='text/javascript', src='/javascripts/smoothPageScroll.js')
     script(language='Javascript', type='text/javascript', src='/javascripts/script.js')
+    script.
+      $(document).ready(function() {
+        $('a[href^="#"]').click(function() {
+            var target = $(this.hash);
+            if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+            if (target.length == 0) target = $('html');
+            $('html, body').animate({ scrollTop: target.offset().top-50  }, 1000);
+            return false;
+        });
+      });
+    script.
+      $(window).load(function() {
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow");;
+      });
+
 
 
     script(language='Javascript', type='text/javascript', src='/javascripts/wow.js')
@@ -28,8 +45,9 @@ html
     
 
   body
+    .se-pre-con
     include header
-    .row.cow1
+    .row.cow1#top
     .face-thing
       .wow.fadeInLeft
         img.img-circle(src="/images/profile.png" style="width: 12%; height: 12%")
@@ -38,7 +56,8 @@ html
         h1.featurette-heading
           font(color="white") 
             |Hi! My name is Harrison.
-    .wow.fadeIn
+    
+    .wow.fadeIn#aboutme
       .container
         .row.whoami
           h1 A Little About Me
