@@ -1658,12 +1658,12 @@ pre code {
   left:0;
   right: 0;
   margin:0 auto;
-  margin-top: -10%;
+  margin-top: -5%;
   text-align: center;
 }
 .aboutme{
-  margin-top:1%;
-  margin-bottom: 3%
+  margin-top:5%;
+  margin-bottom: 10%
 }
 .border { width: 25%; border-top: 5px solid #32CD32; margin: 0 auto; }
 
@@ -1674,7 +1674,7 @@ pre code {
     margin: 0 auto;
     width: 100%;
     padding: 100px 0;
-    background-repeat: no-repe2.jpg
+    background-repeat: no-repeat;
 }
 
 .intro-unit {
