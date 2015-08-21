@@ -1621,7 +1621,7 @@ pre code {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("/images/mat.png");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url("/images/mat.png");
   height:500px;
   z-index: 1;
   display:block;
@@ -1664,7 +1664,7 @@ pre code {
   margin-top:5%;
   margin-bottom: 10%
 }
-.border { width: 25%; border-top: 5px solid #32CD32; margin: 0 auto; }
+.border { width: 25%; border-top: 3px solid #32CD32; margin: 0 auto; }
 
 
 #intro {
