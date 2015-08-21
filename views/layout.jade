@@ -15,8 +15,11 @@ html
     //too many scripts.... rip readability...
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js')
+    script(language='Javascript', type='text/javascript', src='/javascripts/bootstrap.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js')
     script(language='Javascript', type='text/javascript', src='/javascripts/smoothPageScroll.js')
+    script(language='Javascript', type='text/javascript', src='/javascripts/bars.js')
+
     script(language='Javascript', type='text/javascript', src='/javascripts/script.js')
     script.
       $(document).ready(function() {
@@ -33,6 +36,7 @@ html
       // Animate loader off screen
       $(".se-pre-con").fadeOut("slow");;
       });
+ 
 
 
 
@@ -50,7 +54,7 @@ html
     .row.cow1#top
     .face-thing
       .wow.fadeInLeft
-        img.img-circle(src="/images/profile.png" style="width: 12%; height: 12%")
+        img.img-circle(src="/images/profile.png" style="width: 250px; height: 250px")
     .face-words
       .wow.fadeInRight
         h1.featurette-heading
@@ -73,6 +77,52 @@ html
     #intro(data-speed='10', data-type='background')
       .row
         .intro-unit
+    .wow.fadeIn
+      .container
+        .row.whoami
+          h1 Skills
+        .border
+      .container
+        .row.aboutme
+          div(align='center')
+            p.lead.text-muted
+              |Yes.
+          .skillbar.clearfix(data-percent='90%')
+            .skillbar-title(style='background: #124e8c;')
+              span Java
+            .skillbar-bar(style='background: #4288d0;')
+            .skill-bar-percent 90%
+          .skillbar.clearfix(data-percent='80%')
+            .skillbar-title(style='background: #27ae60;')
+              span Android
+            .skillbar-bar(style='background: #32CD32;')
+            .skill-bar-percent 80%
+
+          .skillbar.clearfix(data-percent='50%')
+            .skillbar-title(style='background: #ff0000;')
+              span Node.js
+            .skillbar-bar(style='background: #ff0f00;')
+            .skill-bar-percent 50%
+          .skillbar.clearfix(data-percent='40%')
+            .skillbar-title(style='background: #2c3e50;')
+              span Jade/HTML
+            .skillbar-bar(style='background: #2c3e50;')
+            .skill-bar-percent 40%
+          .skillbar.clearfix(data-percent='40%')
+            .skillbar-title(style='background: #B200B2;')
+              span CSS
+            .skillbar-bar(style='background: #B545B5;')
+            .skill-bar-percent 40%
+          .skillbar.clearfix(data-percent='30%')
+            .skillbar-title(style='background:#F2A3F5;')
+              span Arduino
+            .skillbar-bar(style='background: #FFCCFF;')
+            .skill-bar-percent 30%
+          .skillbar.clearfix(data-percent='30%')
+            .skillbar-title(style='background: #000000;')
+              span C
+            .skillbar-bar(style='background: #333333;')
+            .skill-bar-percent 30%
 
     .wow.fadeIn
       .container
@@ -81,9 +131,9 @@ html
         .border
       .container
         .row.aboutme
-          p.lead.text-muted
-            |Yes.
-
+          div(align='center')
+            p.lead.text-muted
+              |Yes.
       #intro2(data-speed='10', data-type='background')
         .row
           .intro-unit
