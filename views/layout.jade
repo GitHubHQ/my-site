@@ -42,6 +42,9 @@ html
 
     script(language='Javascript', type='text/javascript', src='/javascripts/wow.js')
     script(type='text/javascript', src='/javascripts/materialize.js')
+    script(type='text/javascript', src='/javascripts/waypoint.js')
+    script(type='text/javascript', src='/javascripts/inview.js')
+
     script.
       new WOW().init();
 
@@ -77,7 +80,7 @@ html
     #intro(data-speed='10', data-type='background')
       .row
         .intro-unit
-    .wow.fadeIn
+    #thing.wow.fadeIn
       .container
         .row.whoami
           h1 Skills
